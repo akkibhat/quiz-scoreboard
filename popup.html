@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Pub Quiz Scoreboard</title>
+<link rel="stylesheet" href="css/tables.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" title="style" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body id="roundScoresPopup" style="position:relative">
+
+  <div class="buttons">
+    <div class="left">
+      <a id="roundBackward" title="Previous Round">&larr;</a>
+    </div>
+
+    <div class="right">
+      <a id="reloadRound" title="Reload Round(s)">&#x21bb;</a>
+      <a id="roundForward" title="Next Round">&rarr;</a>
+    </div>
+  </div>
+
+  <div>
+    <h2 id="roundScoresTitle">Name</h2>
+  </div>
+
+  <br />
+
+  <!-- Table we display our rounds in -->
+  <table id="roundScoresTable">
+    <thead>
+        <tr>
+            <th class="anim:update anim:number">#</th>
+            <th class="anim:id">Team Name</th>
+            <th class="anim:update anim:sort anim:number">Score</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+  <br />
+
+
+<!-- Hidden table where we store our data -->
+<table id="scoreTable" style="display:none"></table>
+
+<!-- Our JS -->
+<script src="js/lib/jquery-1.7.2.min.js"></script>
+<script src="js/lib/animator.js"></script>
+<script src="js/lib/sorttables.js"></script>
+<script src="js/lib/rankingTableUpdate.js"></script>
+<script src="js/tables.js"></script>
+<script src="js/popup.js"></script>
+
+</body>
+</html>
